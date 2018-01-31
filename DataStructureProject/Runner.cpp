@@ -6,4 +6,10 @@
 //  Copyright © 2018 Kuo, Sean. All rights reserved.
 //
 
-#include <stdio.h>
+#include "Controller/Controller.hpp"
+int main()
+{
+    Controller app;
+    app.start();
+    return 0;
+}

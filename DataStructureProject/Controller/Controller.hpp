@@ -1,5 +1,5 @@
 //
-//  controller.hpp
+//  Controller.hpp
 //  DataStructureProject
 //
 //  Created by Kuo, Sean on 1/31/18.
@@ -9,6 +9,14 @@
 #ifndef Controller_hpp
 #define Controller_hpp
 
-#include <stdio.h>
+#include "FileController.hpp"
+#include <vector>
+
+
+class Controller
+{
+public:
+    void start();
+};
 
 #endif /* Controller_hpp */

@@ -63,6 +63,7 @@
 		286DCF0A20220B9A000C3619 /* DataStructureProject */ = {
 			isa = PBXGroup;
 			children = (
+				286DCF1320220BF5000C3619 /* Runner.cpp */,
 				286DCF1220220BE4000C3619 /* Controller */,
 			);
 			path = DataStructureProject;
@@ -71,8 +72,9 @@
 		286DCF1220220BE4000C3619 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				286DCF1520220C03000C3619 /* Controller.cpp */,
+				286DCF1620220C03000C3619 /* Controller.hpp */,
 				286DCF1820220C47000C3619 /* Tools */,
-				286DCF1320220BF5000C3619 /* Runner.cpp */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -80,8 +82,6 @@
 		286DCF1820220C47000C3619 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				286DCF1520220C03000C3619 /* Controller.cpp */,
-				286DCF1620220C03000C3619 /* Controller.hpp */,
 				286DCF1920220C63000C3619 /* FileController.cpp */,
 				286DCF1A20220C63000C3619 /* FileController.hpp */,
 			);
