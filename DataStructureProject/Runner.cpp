@@ -7,6 +7,7 @@
 //
 
 #include "Controller/Controller.hpp"
+
 int main()
 {
     Controller app;
