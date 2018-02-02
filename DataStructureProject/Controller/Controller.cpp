@@ -36,12 +36,11 @@ void Controller :: findMaxAndMin()
     
     for (int index = 0; index < myData.size(); index++)
     {
-        if (myData [minIndex] < myData [index])
+        if (myData [minIndex] > myData [index])
         {
             minIndex = index;
         }
-        
-        if (myData [maxIndex] > myData[index])
+        else if (myData [maxIndex] < myData[index])
         {
             maxIndex = index;
         }
