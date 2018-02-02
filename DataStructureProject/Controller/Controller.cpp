@@ -17,7 +17,7 @@ void Controller :: start()
     Timer codeTimer;
     codeTimer.startTimer();
     vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/skuo7320/Documents/DataStructures2018/DataStructureProject/DataStructureProject/Data/crime.csv");
-    for (int loop = 200; loop < 210 ; loop ++)
+    for (int loop = 200; loop < 216 ; loop ++)
     {
         cout << "Spot # " << loop << ": " << myData[loop] << endl;
     }
