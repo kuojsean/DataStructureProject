@@ -12,6 +12,7 @@
 		286DCF1B20220C63000C3619 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 286DCF1920220C63000C3619 /* FileController.cpp */; };
 		286DCF1E20220EE5000C3619 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 286DCF1C20220EE5000C3619 /* Timer.cpp */; };
 		286DCF2320221A10000C3619 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 286DCF2120221A10000C3619 /* CrimeData.cpp */; };
+		288DBF5B202A00410031EB46 /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 288DBF59202A00410031EB46 /* ArrayTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,8 @@
 		286DCF2120221A10000C3619 /* CrimeData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrimeData.cpp; sourceTree = "<group>"; };
 		286DCF2220221A10000C3619 /* CrimeData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CrimeData.hpp; sourceTree = "<group>"; };
 		286DCF24202229DB000C3619 /* crime.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = crime.csv; sourceTree = "<group>"; };
+		288DBF59202A00410031EB46 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
+		288DBF5A202A00410031EB46 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		28A865002024BFA100CD5501 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,6 +74,7 @@
 		286DCF0A20220B9A000C3619 /* DataStructureProject */ = {
 			isa = PBXGroup;
 			children = (
+				288DBF562029FFB30031EB46 /* Testers */,
 				28A864FE2024BF6400CD5501 /* Model */,
 				286DCF1F202219BB000C3619 /* Data */,
 				286DCF1320220BF5000C3619 /* Runner.cpp */,
@@ -108,6 +112,15 @@
 				286DCF2220221A10000C3619 /* CrimeData.hpp */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		288DBF562029FFB30031EB46 /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				288DBF59202A00410031EB46 /* ArrayTester.cpp */,
+				288DBF5A202A00410031EB46 /* ArrayTester.hpp */,
+			);
+			path = Testers;
 			sourceTree = "<group>";
 		};
 		28A864FE2024BF6400CD5501 /* Model */ = {
@@ -187,6 +200,7 @@
 				286DCF2320221A10000C3619 /* CrimeData.cpp in Sources */,
 				286DCF1720220C03000C3619 /* Controller.cpp in Sources */,
 				286DCF1B20220C63000C3619 /* FileController.cpp in Sources */,
+				288DBF5B202A00410031EB46 /* ArrayTester.cpp in Sources */,
 				286DCF1E20220EE5000C3619 /* Timer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
