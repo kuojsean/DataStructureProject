@@ -34,7 +34,7 @@ public:
     int getSize() const;
     Type getFromIndex(int index);
     void setAtIndex(int index, Type data);
-}
+};
 
 template <class Type>
 Array<Type> :: Array(int size)
