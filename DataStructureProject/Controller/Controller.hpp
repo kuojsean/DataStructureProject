@@ -11,6 +11,8 @@
 
 #include "FileController.hpp"
 #include "Tools/Timer.hpp"
+#include "../Model/Structures/Array.hpp"
+#include "../Testers/ArrayTester.hpp"
 
 #include <iostream>
 #include <vector>
@@ -20,6 +22,7 @@ class Controller
 {
 private:
     void findMaxAndMin();
+    void testArray();
 public:
     void start();
 };

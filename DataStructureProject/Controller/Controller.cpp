@@ -12,17 +12,12 @@ using namespace std;
 
 void Controller :: start()
 {
-    findMaxAndMin();
-    cout << "Testing the Timer class" << endl;
-    Timer codeTimer;
-    codeTimer.startTimer();
-    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/skuo7320/Documents/DataStructures2018/DataStructureProject/DataStructureProject/Data/crime.csv");
-    for (int loop = 200; loop < 216 ; loop ++)
-    {
-        cout << "Spot # " << loop << ": " << myData[loop] << endl;
-    }
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
+    ArrayTester myTest;
+    myTest.testArrayUse();
+    myTest.testAdvancedArray();
+//    findMaxAndMin();
+
+//    testArray();
 }
 
 void Controller :: findMaxAndMin()
@@ -49,4 +44,18 @@ void Controller :: findMaxAndMin()
     cout << " The smallest crime stat is at "<< minIndex << " and it is: " << myData[minIndex] << endl;
     cout << " The largest crime stat is at "<< maxIndex << " and it is: " << myData[maxIndex] << endl;
     searchTimer.displayInformation();
+}
+
+void Controller :: testArray()
+{
+        cout << "Testing the Timer class" << endl;
+        Timer codeTimer;
+        codeTimer.startTimer();
+        vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/skuo7320/Documents/DataStructures2018/DataStructureProject/DataStructureProject/Data/crime.csv");
+        for (int loop = 200; loop < 216 ; loop ++)
+        {
+            cout << "Spot # " << loop << ": " << myData[loop] << endl;
+        }
+        codeTimer.stopTimer();
+        codeTimer.displayInformation();
 }
