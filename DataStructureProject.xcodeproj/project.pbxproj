@@ -45,6 +45,7 @@
 		288DBF5A202A00410031EB46 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		288DBF5D202A12930031EB46 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		28A865002024BFA100CD5501 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
+		28E315712031F91D00634777 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +150,7 @@
 			children = (
 				28A865002024BFA100CD5501 /* Array.hpp */,
 				2816E6D5202CB4A100F520A2 /* DoublyLinkedList.hpp */,
+				28E315712031F91D00634777 /* LinkedList.hpp */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
