@@ -100,5 +100,64 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     }
 }
 
+Type LinkedList<Type> :: getFromIndex(int index)
+{
+    assert(index >= 0 && index < this->size);
+    Type data;
+    
+    LinearNode<Type> * current = front;
+    
+    for (int position = 0; position < index; position++)
+    {
+        current = current->getNextNode();
+    }
+    
+    data = current->getData();
+    
+    return data;
+}
+
+Type LinkedList<Type> :: remove(int index)
+{
+    assert(index >= 0 && index < this->size);
+    
+    LinearNode<Type> * current = front;
+    LinearNode<Type> * toBeRemoved = nullptr;
+    LinearNode<Type> * previous = nullptr;
+    
+    Type removedData;
+    
+    if(index == 0)
+    {
+        toBeRemoved = front;
+        this->front = this->front->getNextNode();
+    }
+    else
+    {
+        for(int position = 0; position < index; position++)
+        {
+            previous = current;
+            current = current->getNExtNode();
+        }
+        
+        toBeRemoved= current;
+        
+        if(index == this->size - 1)
+        {
+            previous -> setNextNode(nullptr);
+            end = previous;
+        }
+        else
+        {
+            current = toBeRemoved->getNextNode();
+            previous->setNextNode(current);
+        }
+        this->size -= 1;
+        
+        removedData = toBeRemoved->getData();
+        delete toBeRemoved;
+        return removedData;
+}
+
 
 #endif /* LinkedList_hpp */
