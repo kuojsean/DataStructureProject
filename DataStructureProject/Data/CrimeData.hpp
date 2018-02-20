@@ -43,6 +43,7 @@ private:
     
 public:
     CrimeData(string dataLine);
+    CrimeData();
     
     string getDepartment() const;
     int getPopulation() const;
@@ -75,5 +76,7 @@ public:
     
     friend ostream & operator << (ostream &outputStream, const CrimeData & outputData);
 };
+
+
 
 #endif /* CrimeData_hpp */
