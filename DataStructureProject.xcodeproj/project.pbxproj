@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280736E2203C88D800B8AFCA /* ListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 280736E0203C88D800B8AFCA /* ListTester.cpp */; };
 		286DCF1420220BF5000C3619 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 286DCF1320220BF5000C3619 /* Runner.cpp */; };
 		286DCF1720220C03000C3619 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 286DCF1520220C03000C3619 /* Controller.cpp */; };
 		286DCF1B20220C63000C3619 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 286DCF1920220C63000C3619 /* FileController.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		280736E0203C88D800B8AFCA /* ListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ListTester.cpp; sourceTree = "<group>"; };
+		280736E1203C88D800B8AFCA /* ListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ListTester.hpp; sourceTree = "<group>"; };
 		2816E6D2202CB39600F520A2 /* LinearNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearNode.hpp; sourceTree = "<group>"; };
 		2816E6D5202CB4A100F520A2 /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
 		286DCF0820220B9A000C3619 /* DataStructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +49,7 @@
 		288DBF5D202A12930031EB46 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
 		28A865002024BFA100CD5501 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		28E315712031F91D00634777 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
+		28FFD420203F2265000A9156 /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 			children = (
 				288DBF59202A00410031EB46 /* ArrayTester.cpp */,
 				288DBF5A202A00410031EB46 /* ArrayTester.hpp */,
+				280736E0203C88D800B8AFCA /* ListTester.cpp */,
+				280736E1203C88D800B8AFCA /* ListTester.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -139,7 +145,6 @@
 		28A864FE2024BF6400CD5501 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				288DBF5C202A12730031EB46 /* Nodes */,
 				28A864FF2024BF8400CD5501 /* Structures */,
 			);
 			path = Model;
@@ -148,11 +153,29 @@
 		28A864FF2024BF8400CD5501 /* Structures */ = {
 			isa = PBXGroup;
 			children = (
-				28A865002024BFA100CD5501 /* Array.hpp */,
-				2816E6D5202CB4A100F520A2 /* List.hpp */,
-				28E315712031F91D00634777 /* LinkedList.hpp */,
+				28FFD41F203F1534000A9156 /* NonLinear */,
+				288DBF5C202A12730031EB46 /* Nodes */,
+				28FFD41E203F1516000A9156 /* Linear */,
 			);
 			path = Structures;
+			sourceTree = "<group>";
+		};
+		28FFD41E203F1516000A9156 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				28E315712031F91D00634777 /* LinkedList.hpp */,
+				28A865002024BFA100CD5501 /* Array.hpp */,
+				2816E6D5202CB4A100F520A2 /* List.hpp */,
+				28FFD420203F2265000A9156 /* Stack.hpp */,
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+		28FFD41F203F1534000A9156 /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NonLinear;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +241,7 @@
 				286DCF1B20220C63000C3619 /* FileController.cpp in Sources */,
 				288DBF5B202A00410031EB46 /* ArrayTester.cpp in Sources */,
 				286DCF1E20220EE5000C3619 /* Timer.cpp in Sources */,
+				280736E2203C88D800B8AFCA /* ListTester.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
