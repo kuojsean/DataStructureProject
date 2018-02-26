@@ -42,6 +42,7 @@ Stack<Type> :: ~Stack()
         pop();
     }
 }
+
 template <class Type>
 void Stack<Type> :: push(Type data)
 {
