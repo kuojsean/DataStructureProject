@@ -47,6 +47,7 @@
 		288DBF59202A00410031EB46 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		288DBF5A202A00410031EB46 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
 		288DBF5D202A12930031EB46 /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		2894910F2046F9470072F34F /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		28A865002024BFA100CD5501 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		28E315712031F91D00634777 /* LinkedList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedList.hpp; sourceTree = "<group>"; };
 		28E5B881204461DE00E2FEC5 /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
@@ -171,6 +172,7 @@
 				2816E6D5202CB4A100F520A2 /* List.hpp */,
 				28FFD420203F2265000A9156 /* Stack.hpp */,
 				28E5B881204461DE00E2FEC5 /* Queue.hpp */,
+				2894910F2046F9470072F34F /* CircularList.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
