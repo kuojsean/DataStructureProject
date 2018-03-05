@@ -10,7 +10,7 @@
 #define List_hpp
 
 #include <assert.h>
-#include "../../Nodes/LinearNode.hpp"
+#include "..//Nodes/LinearNode.hpp"
 
 using namespace std;
 
@@ -26,7 +26,7 @@ public:
     virtual Type remove(int index) = 0;
     virtual Type getFromIndex(int index) = 0;
     //Helper
-    virtual int getSize) const = 0;
+    virtual int getSize() const = 0;
     virtual LinearNode<Type> * getFront() = 0;
     virtual LinearNode<Type> * getEnd() = 0;
 };

@@ -12,9 +12,11 @@ using namespace std;
 
 void Controller :: start()
 {
-    ArrayTester myTest;
-    myTest.testArrayUse();
-    myTest.testAdvancedArray();
+    RecursionTester test;
+    test.testRecursionNumbers();
+//    ArrayTester myTest;
+//    myTest.testArrayUse();
+//    myTest.testAdvancedArray();
 //    findMaxAndMin();
 
 //    testArray();
