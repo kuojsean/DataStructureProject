@@ -14,6 +14,7 @@
 #include "../Model/Structures/Linear/Array.hpp"
 #include "../Testers/ArrayTester.hpp"
 #include "../Testers/RecursionTester.hpp"
+#include "../Testers/LinkedListTester.hpp"
 
 #include <iostream>
 #include <vector>

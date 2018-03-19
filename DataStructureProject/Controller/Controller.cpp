@@ -12,8 +12,11 @@ using namespace std;
 
 void Controller :: start()
 {
-    RecursionTester test;
-    test.testRecursionNumbers();
+    LinkedListTester listTest;
+    listTest.testListBasics();
+    listTest.testListWithData();
+//    RecursionTester test;
+//    test.testRecursionNumbers();
 //    ArrayTester myTest;
 //    myTest.testArrayUse();
 //    myTest.testAdvancedArray();
