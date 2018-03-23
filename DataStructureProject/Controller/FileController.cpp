@@ -59,7 +59,7 @@ LinkedList<CrimeData> FileController :: readDataToList(string fileName)
     {
         while (!dataFile.eof())
         {
-            getline(dataFile, currentCSVLine, '\r');
+            getline(dataFile, currentCSVLine, '\n');
             if(rowCount != 0)
             {
                 if(currentCSVLine.length() != 0)
