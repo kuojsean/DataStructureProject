@@ -12,12 +12,12 @@ using namespace std;
 
 void Controller :: start()
 {
-//    GraphTester graphTest;
-//    graphTest.testGraphs();
+    GraphTester graphTest;
+    graphTest.testGraphs();
     
-    LinkedListTester listTest;
-    listTest.testListBasics();
-    listTest.testListWithData();
+//    LinkedListTester listTest;
+//    listTest.testListBasics();
+//    listTest.testListWithData();
     
 //    RecursionTester test;
 //    test.testRecursionNumbers();

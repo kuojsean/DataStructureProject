@@ -16,6 +16,7 @@
 		288DBF5B202A00410031EB46 /* ArrayTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 288DBF59202A00410031EB46 /* ArrayTester.cpp */; };
 		28949112204714CF0072F34F /* LinkedListTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28949110204714CF0072F34F /* LinkedListTester.cpp */; };
 		2899BD3F20653D6C00678DDD /* GraphTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2899BD3D20653D6C00678DDD /* GraphTester.cpp */; };
+		2899BD422065602B00678DDD /* TestingStacksAndQueues.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2899BD402065602B00678DDD /* TestingStacksAndQueues.cpp */; };
 		28BD66A0205AB35800F9016F /* SortingTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BD669E205AB35800F9016F /* SortingTester.cpp */; };
 		28BF42CB204D8F51006D1704 /* RecursionTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28BF42C9204D8F51006D1704 /* RecursionTester.cpp */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,8 @@
 		28949111204714CF0072F34F /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		2899BD3D20653D6C00678DDD /* GraphTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GraphTester.cpp; sourceTree = "<group>"; };
 		2899BD3E20653D6C00678DDD /* GraphTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GraphTester.hpp; sourceTree = "<group>"; };
+		2899BD402065602B00678DDD /* TestingStacksAndQueues.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TestingStacksAndQueues.cpp; sourceTree = "<group>"; };
+		2899BD412065602B00678DDD /* TestingStacksAndQueues.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TestingStacksAndQueues.hpp; sourceTree = "<group>"; };
 		28A865002024BFA100CD5501 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		28BD669E205AB35800F9016F /* SortingTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTester.cpp; sourceTree = "<group>"; };
 		28BD669F205AB35800F9016F /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 				28BD669F205AB35800F9016F /* SortingTester.hpp */,
 				2899BD3D20653D6C00678DDD /* GraphTester.cpp */,
 				2899BD3E20653D6C00678DDD /* GraphTester.hpp */,
+				2899BD402065602B00678DDD /* TestingStacksAndQueues.cpp */,
+				2899BD412065602B00678DDD /* TestingStacksAndQueues.hpp */,
 			);
 			path = Testers;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28BF42CB204D8F51006D1704 /* RecursionTester.cpp in Sources */,
+				2899BD422065602B00678DDD /* TestingStacksAndQueues.cpp in Sources */,
 				286DCF1420220BF5000C3619 /* Runner.cpp in Sources */,
 				286DCF2320221A10000C3619 /* CrimeData.cpp in Sources */,
 				286DCF1720220C03000C3619 /* Controller.cpp in Sources */,
