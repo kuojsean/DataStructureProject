@@ -12,14 +12,19 @@ using namespace std;
 
 void Controller :: start()
 {
-    LinkedListTester listTest;
-    listTest.testListBasics();
-    listTest.testListWithData();
+    GraphTester graphTest;
+    graphTest.testGraphs();
+//    LinkedListTester listTest;
+//    listTest.testListBasics();
+//    listTest.testListWithData();
+    
 //    RecursionTester test;
 //    test.testRecursionNumbers();
+    
 //    ArrayTester myTest;
 //    myTest.testArrayUse();
 //    myTest.testAdvancedArray();
+    
 //    findMaxAndMin();
 
 //    testArray();

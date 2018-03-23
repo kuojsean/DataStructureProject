@@ -15,6 +15,7 @@
 #include "../Testers/ArrayTester.hpp"
 #include "../Testers/RecursionTester.hpp"
 #include "../Testers/LinkedListTester.hpp"
+#include "../Testers/GraphTester.hpp"
 
 #include <iostream>
 #include <vector>

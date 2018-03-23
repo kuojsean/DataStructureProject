@@ -51,7 +51,7 @@ public:
     std::set<int> neighbors(int vertex) const;
     
     //Traversals
-    void depthFirstTraversal(Graph<Type> & graph, set vertex);
+    void depthFirstTraversal(Graph<Type> & graph, int vertex);
     void breadthFirstTraversal(Graph<Type> & graph, int vertex);
     int costTraversal(Graph<Type> & graph, int vertex);
 };
@@ -92,7 +92,7 @@ void Graph<Type> :: addVertex(const Type& value)
     int newVertexNumber = vertexCount;
     vertexCount++;
     
-    for(int otherVertexNmber = 0; otherVertexNumber < vertexCount ; otherVertexNumber++)
+    for(int otherVertexNumber = 0; otherVertexNumber < vertexCount ; otherVertexNumber++)
     {
         adjacencyMatrix[otherVertexNumber][newVertexNumber] = false;
         adjacencyMatrix[newVertexNumber][otherVertexNumber] = false;
@@ -111,7 +111,7 @@ void Graph<Type> :: removeEdge(int source, int target)
 template<class Type>
 void Graph<Type> :: removeEdgeUndirected(int source, int target)
 {
-    assert(source >= 0 && source < vertexCount ** target >= 0 && target < vertexCount);
+    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
     adjacencyMatrix[source][target] = false;
     adjacencyMatrix[target][source] = false;
 }
@@ -128,7 +128,7 @@ template <class Type>
 void Graph<Type> :: addEdge(int source, int target)
 {
     assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    adjacenyMatrix[source][target] = true;
+    adjacencyMatrix[source][target] = true;
 }
 
 template <class Type>
@@ -143,31 +143,8 @@ template <class Type>
 void Graph<Type> :: addEdgeUndirected(int source, int target)
 {
     assert(source >= 0 && source < vertexCount && target >=0 && target < vertexCount);
-    adjacencyMatrix[source][target] = cost;
-    adjacencyMatrix[target][source] = cost;
-}
-
-template <class Type>
-void Graph<Type> :: removeEdge(int source, int target)
-{
-    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    adjacencyMatrix[source][target] = false;
-}
-
-template <class Type>
-void Graph<Type> :: removeEdgeUndirected(int source, int target)
-{
-    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    adjacencyMatrix[source][target] = false;
-    adjacencyMatrix[target][source] = false;
-}
-
-template <class Type>
-void Graph<Type> :: removeEdgeCost(int source, int target)
-{
-    assert(source >= 0 && source < vertexCount && target >= 0 && target < vertexCount);
-    weightCostMatrix[source][target] = false;
-    weightCostMatrix[target][source] = false;
+    adjacencyMatrix[source][target] = true;
+    adjacencyMatrix[target][source] = true;
 }
 
 template <class Type>
@@ -210,10 +187,10 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
-    bool visitedVerticies[MAXIMUM];
+    bool visitedVertices[MAXIMUM];
     assert(vertex < currentGraph.size());
-    std::fill_n(vistedVertices, currentGraph.size(), false);
-    depthFirstTraversal(currentGraph, vertex, vistedVertices);
+    std::fill_n(visitedVertices, currentGraph.size(), false);
+    depthFirstTraversal(currentGraph, vertex, visitedVertices);
 }
 
 template <class Type>
@@ -229,20 +206,20 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & currentGraph, int vertex, 
     {
         if(!visited[*setIterator])
         {
-            depthFirstTraversal(currentGraph, *setIterator, visted);
+            depthFirstTraversal(currentGraph, *setIterator, visited);
         }
     }
     
 }
 
 template <class Type>
-void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex, bool * visited)
+void Graph<Type> :: breadthFirstTraversal(Graph<Type> & currentGraph, int vertex)
 {
     assert(vertex < currentGraph.size());
     bool visited[MAXIMUM];
     std::set<int> connections;
     std::set<int>::iterator setIterator;
-    set::queue<int> vertexQueue;
+    std::queue<int> vertexQueue;
     
     std::fill_n(visited,currentGraph.size(),false);
     visited[vertex] = true;
