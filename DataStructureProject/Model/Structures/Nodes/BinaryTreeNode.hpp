@@ -33,15 +33,19 @@ public:
 };
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode()
+BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 {
-    
+    root = nullptr;
+    right = nullptr;
+    left = nullptr;
 }
 
 template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode(Type data)
+BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 {
-    
+    root = nullptr;
+    right = nullptr;
+    left = nullptr;
 }
 
 template <class Type>
