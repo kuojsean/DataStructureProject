@@ -43,7 +43,7 @@ Queue<Type> :: ~Queue()
 {
     for(LinearNode<Type> * removed = this->front; removed != nullptr; removed = this->front)
     {
-        this->front = removed->getNExtNode();
+        this->front = removed->getNextNode();
         delete removed;
     }
 }
@@ -84,7 +84,7 @@ Type Queue<Type> :: dequeue()
 {
     assert(this->size > 0);
     
-    Type returned = this->fribt->getData();
+    Type returned = this->front->getData();
     
     LinearNode<Type> * removed = this->front;
     this->front = removed->getNextNode();
