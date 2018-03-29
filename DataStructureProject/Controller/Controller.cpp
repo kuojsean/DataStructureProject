@@ -12,8 +12,11 @@ using namespace std;
 
 void Controller :: start()
 {
-    GraphTester graphTest;
-    graphTest.testGraphs();
+    BinaryTreeTester tree;
+    tree.doTreeStuff();
+    
+//    GraphTester graphTest;
+//    graphTest.testGraphs();
     
 //    LinkedListTester listTest;
 //    listTest.testListBasics();
