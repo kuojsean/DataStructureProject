@@ -9,5 +9,6 @@
 #ifndef Tree_h
 #define Tree_h
 
+using namespace std;
 
 #endif /* Tree_h */
