@@ -25,4 +25,21 @@ void BinaryTreeTester :: doTreeStuff()
     testTree.insert(600);
     
     testTree.inOrderTraversal();
+    testTree.preOrderTraversal();
+    testTree.postOrderTraversal();
+    
+    stringTree.insert("ab");
+    stringTree.insert("abc");
+    stringTree.insert("aab");
+    stringTree.insert("abcd");
+    stringTree.insert("acde");
+    stringTree.insert("adef");
+    stringTree.insert("aefg");
+    stringTree.insert("afgh");
+    stringTree.insert("az");
+    
+    stringTree.inOrderTraversal();
+    stringTree.preOrderTraversal();
+    stringTree.postOrderTraversal();
+
 }

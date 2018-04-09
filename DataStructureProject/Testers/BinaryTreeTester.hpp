@@ -17,6 +17,7 @@ class BinaryTreeTester
 {
 private:
     BinarySearchTree<int> testTree;
+    BinarySearchTree<string> stringTree;
 public:
     void doTreeStuff();
 };
