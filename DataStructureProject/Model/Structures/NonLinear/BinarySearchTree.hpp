@@ -31,6 +31,7 @@ protected:
     BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
     
     void removeNode(BinaryTreeNode<Type> * removeMe);
+    void destroyTree(BinaryTreeNode<Type> * node);
     
 public:
     
@@ -129,7 +130,18 @@ void BinarySearchTree<Type> :: postOrderTraversal()
 template <class Type>
 BinarySearchTree<Type> :: ~BinarySearchTree()
 {
-    
+    destroyTree(this->root);
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: destrpyTree(BinaryTreeNOde<Type> * node)
+{
+    if(node != nullptr)
+    {
+        destroyTree(node->getLeftNode());
+        destroyTree(node->getRightNode());
+        delete node;
+    }
 }
 
 template <class Type>
@@ -301,6 +313,48 @@ void BinarySearchTree<Type> :: removeNode(BinaryTreeNode<Type> * removeMe)
     {
         this->root=removeMe;
     }
+}
+
+template<class Type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode<Type> * startingNode)
+{
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    BinaryTreeNode<Type> * previous = nullptr;
+    while (currentNode != nullptr)
+    {
+        previous = currentNode;
+        currentNode = currentNode->getLeftNode();
+    }
+    
+    return previous;
+}
+
+template<class Type>
+BinaryTreeNode<Type> * BinarySearchTree<Type> :: getRightMostChild(BinaryTreeNode<Type> * startingNode)
+{
+    BinaryTreeNode<Type> * currentNode = startingNode;
+    BinaryTreeNode<Type> * previous = nullptr;
+    while(currentNode != nullptr)
+    {
+        previous = currentNode;
+        currentNode = currentNode->getRightNOde();
+    }
+    
+    return previous;
+}
+
+template <class Type>
+Type BinarySearchTree<Type> :: findMaximum()
+{
+    assert(this->root != nullptr);
+    return getRightMostChild(this->root)->getData();
+}
+
+template <class Type>
+Type BinarySearchTree<Type> :: findMinimum()
+{
+    assert(this->root != nullptr);
+    return getLeftMostChild(this->root)->getData();
 }
 
 template <class Type>
