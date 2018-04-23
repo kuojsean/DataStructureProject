@@ -134,7 +134,7 @@ BinarySearchTree<Type> :: ~BinarySearchTree()
 }
 
 template <class Type>
-void BinarySearchTree<Type> :: destrpyTree(BinaryTreeNOde<Type> * node)
+void BinarySearchTree<Type> :: destroyTree(BinaryTreeNode<Type> * node)
 {
     if(node != nullptr)
     {
