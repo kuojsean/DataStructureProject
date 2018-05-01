@@ -9,7 +9,7 @@
 #ifndef N_AryTreeNode_h
 #define N_AryTreeNode_h
 
-#include <set>
+#include <vector>
 #include "Node.hpp"
 using namespace std;
 
@@ -17,7 +17,7 @@ template <calss Type>
 class N_AryTreeNode : public Node<Type>
 {
 private:
-    set<N_AryTreeNode<Type>*> nodes;
+    vector<N_AryTreeNode<Type>*> nodes;
     N_AryTreeNOde<Type> * root;
     
 public:
@@ -25,7 +25,7 @@ public:
     ~N_AryTreeNOde<Type>();
     N_AryTreeNode<Type>(Type data);
     
-    set<N_AryTreeNode<Type>*> getNodes();
+    vector<N_AryTreeNode<Type>*> getNodes();
     N_AryTreeNode<Type> * getRoot();
     int getChildCount();
     
@@ -47,7 +47,10 @@ N_AryTreeNode<Type> :: N_AryTreeNode(Type data) : Node<Type>(data)
 template <class Type>
 N_AryTreeNode<Type> :: ~N_AryTreeNode()
 {
-    bides.clear();
+    for (int index =nodes.size() - 1; index >= 0; index --)
+    {
+        delete nodes[index];
+    }
 }
 
 template <class Type>
@@ -57,7 +60,7 @@ N_AryTreeNode<Type> * N_AryTreeNode<Type> :: getRoot()
 }
 
 template <class Type>
-set<N_aryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
+vector<N_aryTreeNode<Type>*> N_AryTreeNode<Type> :: getNodes()
 {
     return nodes;
 }
@@ -77,7 +80,7 @@ void N_AryTreeNode<type> :: setRoot(N_arytreeNode<Type> * root)
 template <class Type>
 void N_AryTreeNode<Type> :: addChild(Type data)
 {
-    N_AryTreeNode<Type> * node = new N_AryTreeNOde<Type>(data);
+    N_AryTreeNode<Type> * node = new N_AryTreeNode<Type>(data);
     nodes.insert(node);
 }
 #endif /* N_AryTreeNode_h */

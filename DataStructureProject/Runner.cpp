@@ -7,10 +7,13 @@
 //
 
 #include "Controller/Controller.hpp"
-
+using namespace std;
 int main()
 {
-    Controller app;
-    app.start();
+    int sample = 7;
+    cout << &sample << endl;
+    unsigned long address = (unsigned long) &sample;
+    cout << address << endl;
+    
     return 0;
 }
