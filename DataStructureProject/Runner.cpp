@@ -15,5 +15,10 @@ int main()
     unsigned long address = (unsigned long) &sample;
     cout << address << endl;
     
+    Controller app;
+    app.start();
+    
     return 0;
+    
+    
 }
